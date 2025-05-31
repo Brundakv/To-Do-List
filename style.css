@@ -1,0 +1,231 @@
+body {
+  font-family: poppins, Arial, Helvetica, sans-serif !important;
+    margin: O;
+    background-color: #4A2A51 !important;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.app {
+    background-color: #fff;
+    width: 90%;
+    height: 80%;
+    border: 5px solid #7C6A92;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: scroll;
+   background:linear-gradient(to right,#F8EBFF, #CFD9FF, #C9FFFC);
+  }
+
+  h5{
+    text-align: center;
+    color: #1C1C56;
+    font-weight: 800 !important;
+    font-size: 18px;
+  }
+
+ .taskH{
+    color: #1C1C56 ; /*not working*/
+    font-weight:900 ;
+    font-size: 18px;
+  }
+
+  #addnew{
+    height: 48px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#FFF;
+    color: #333859;
+    padding: 1rem 1rem;
+    border: 1px solid #7C6A92;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .fa-plus{
+    background-color: #c3acdf;
+    padding: 8px;
+    border-radius: 100px;
+  }
+
+  #msg{
+    color: red;
+  }
+
+  #tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  
+  #tasks div {
+    border: 1px solid #7C6A92;
+    background-color:#FFF;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+  }
+
+  #tasks .name-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin-bottom: 4px;
+  }
+
+  /* Style the task name */
+.fw-bold {
+    margin: 0; /* Remove default margin */
+    color: #1C1C56;
+    font-weight: 800 ;
+    font-size: 18px;
+}
+
+/* Style the date */
+.text-secondary {
+    margin: 0; /* Remove default margin */
+    color: #878787;
+}
+
+.dis{
+  font-weight: 500;
+    font-size: 15px;
+    color: #333859;
+}
+
+  #tasks div .options {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  #tasks div .options i {
+    cursor: pointer;
+  }
+
+
+
+
+/*   
+
+  /*  v2 Add to your existing CSS */
+.options input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #666;
+  opacity: 0.7;
+}
+
+/* Optional: Style the checkbox */
+.complete-task {
+  width: 20px;
+  height: 20px;
+
+}
+
+.check{
+ display: flex;
+ align-items: center;
+ width: 80%;
+ font-weight: 500;
+    font-size: 12px;
+    color: #333859;
+}
+
+.icon{
+  width: 1fr;
+  display: flex;
+  justify-content:flex-end;
+  /* padding: 5px 15px 5px; */
+  gap: 20px;
+} 
+
+
+
+
+
+
+
+
+
+
+ 
+ /* /* Media Queries */
+
+/* Small devices (375px and up) */
+/* @media screen and (min-width: 375px) {
+  .app {
+      width: 80%;
+      min-width: 375px;
+      margin: 1rem;
+  }
+  
+  #addnew {
+      padding: 0.75rem 1.5rem;
+  }
+  
+  #tasks div {
+      padding: 8px;
+  }
+} */
+
+/* Medium devices (768px and up - tablet) */
+/* @media screen and (min-width: 768px) {
+  .app {
+      width: 85%;
+      margin: 2rem;
+  }
+  
+  #tasks {
+      gap: 20px;
+  }
+  
+  #tasks div {
+      padding: 10px;
+  }
+  
+  #tasks div .options {
+      gap: 30px;
+  }
+} */
+
+/* Large devices (1200px and up - desktop) */
+/* @media screen and (min-width: 1200px) {
+  .app {
+      width: 80%;
+      max-width: 1200px;
+      margin: 3rem;
+  }
+  
+  #addnew {
+      padding: 1rem 2rem;
+  }
+  
+  #tasks {
+      gap: 24px;
+  }
+  
+  #tasks div {
+      padding: 15px;
+  }
+} */
+
+/* Maximum width constraint */
+/* @media screen and (max-width: 1200px) {
+  .app {
+      width: 90%;
+  }
+} */
