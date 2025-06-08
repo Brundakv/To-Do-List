@@ -1,0 +1,145 @@
+body {
+  font-family: poppins, Arial, Helvetica, sans-serif !important;
+  margin: O;
+  background-color: #4a2a51 !important;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app {
+  background-color: #fff;
+  width: 90%;
+  height: 80%;
+  border: 5px solid #7c6a92;
+  border-radius: 20px;
+  padding: 1rem;
+  overflow: scroll;
+  background: linear-gradient(to right, #f8ebff, #cfd9ff, #c9fffc);
+}
+
+h5 {
+  text-align: center;
+  color: #1c1c56;
+  font-weight: 800 !important;
+  font-size: 18px;
+}
+
+.taskH {
+  color: #1c1c56; /*not working*/
+  font-weight: 900;
+  font-size: 18px;
+}
+
+#addnew {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #333859;
+  padding: 1rem 1rem;
+  border: 1px solid #7c6a92;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #c3acdf;
+  padding: 8px;
+  border-radius: 100px;
+}
+
+#msg {
+  color: red;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 1px solid #7c6a92;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks .name-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  margin-bottom: 4px;
+}
+
+/* Styles the task name */
+.fw-bold {
+  margin: 0; /* Remove default margin */
+  color: #1c1c56;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* Styles the date */
+.text-secondary {
+  margin: 0; /* Remove default margin */
+  color: #878787;
+}
+
+.dis {
+  font-weight: 500;
+  font-size: 15px;
+  color: #333859;
+}
+
+#tasks div .options {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #666;
+  opacity: 0.7;
+}
+
+.complete-task {
+  width: 20px;
+  height: 20px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  font-weight: 500;
+  font-size: 12px;
+  color: #333859;
+}
+
+.icon {
+  width: 1fr;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
