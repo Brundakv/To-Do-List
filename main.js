@@ -134,9 +134,10 @@ let editTask = (e) => {
   let selectedTask = e.parentElement.parentElement.parentElement;
   editIndex = parseInt(selectedTask.id);
 
-  textInput.value = selectedTask.children[0].innerHTML;
-  dateInput.value = selectedTask.children[1].innerHTML;
-  textarea.value = selectedTask.children[2].innerHTML;
+   
+  textInput.value = selectedTask.querySelector(".fw-bold").innerHTML;
+  dateInput.value = selectedTask.querySelector(".text-secondary").innerHTML;
+  textarea.value = selectedTask.children[1].innerHTML; 
 
   add.innerHTML = "Update";
 };
